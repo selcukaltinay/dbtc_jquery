@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+let parVisibility = 1;
+$(document).ready(function(){
+	
+  $("button").click(function(){
+  	if( parVisibility ==1)
+    {
+    parVisibility = 0;
+    $("p").hide(); 
+    $("button").text("Hide");
+    }
+    else
+    { 
+    parVisibility = 1;
+    $("p").show();
+    $("button").text("Show");
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me to hide paragraphs</button>
+
+</body>
+</html>
